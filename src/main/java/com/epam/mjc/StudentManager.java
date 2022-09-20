@@ -12,7 +12,7 @@ public class StudentManager {
       return Student.getValueOf(studentID);
     }
     else{
-      throw new StudentNotFoundException("Could not find student with ID "+ Long.toString(studentID));
+      throw new StudentNotFoundException("Could not find student with ID {"+ Long.toString(studentID) + "}");
     }
 
 
