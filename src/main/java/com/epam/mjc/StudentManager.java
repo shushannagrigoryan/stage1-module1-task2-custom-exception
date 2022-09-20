@@ -25,9 +25,11 @@ public class StudentManager {
       try {
         Student student = manager.find(IDs[i]);
         System.out.println("Student name " + student.getName());
+
       }
       catch (StudentNotFoundException ex){
-        System.out.println(ex);
+        //System.out.println(ex);
+        System.err.print(ex);
       }
     }
 
